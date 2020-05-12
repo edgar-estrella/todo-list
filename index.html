@@ -1,0 +1,35 @@
+<html>
+    <title>TODO LIST</title>
+    <header>
+        <script src="js/todo.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/todo.css"><link>
+    </header>
+    <body>
+        <div class = "background-blue todo-main-container">
+            <div class = "todo-header">
+                <div class = "todo-heading">
+                    <span class = "todo-heading-xl">WORK TO-DOS</span>
+                </div>
+                <div class = "todo-heading-info">
+                    <p class = "todo-heading-md label-yellow">Enter text into the input field to add items to your list (max. 28 characters).</p>
+                    <p class = "todo-heading-md label-green">Click the item to mark it as completed.</p>
+                    <p class = "todo-heading-md label-gray">Click the "X" to remove the item from the list.</p>
+                </div>
+            </div>
+            <div class = "todo-content">
+                <div class = "todo-content-input">
+                    <span class = "todo-input-container">
+                        <input id = "todo-input" placeholder = "New item..." class = "todo-input">
+                    </span>
+                    <span class = "todo-button-container">
+                        <button class = "todo-button" onClick = "add()"></button>
+                    </span>
+                </div>
+                <div class = "todo-content-items">
+                    <div id = "todo-list" class = "todo-list"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <div id = "todo-list-placeholder"></div>
+</html>
